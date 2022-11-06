@@ -1,0 +1,22 @@
+body {
+  font-family: 'Noto Sans TC',
+    sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 80%;
+}
+
+.form-container {
+  margin-top: 64px;
+}
+
+.register-container {
+  width: 50%;
+}
+
+.d-none {
+  display: none;
+}
