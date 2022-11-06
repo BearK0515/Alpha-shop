@@ -6,6 +6,8 @@
 
 ![001](https://github.com/BearK0515/Alpha-shop/blob/main/image/001.png)
 
+### `npm i`
+
 ### `npm start`
 
 Runs the app in the development mode.\
