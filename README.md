@@ -4,7 +4,7 @@
 
 ## 專案畫面
 
-![001](https://github.com/BearK0515/Alpha-shop/blob/main/image/001.png)
+![002](https://github.com/BearK0515/Alpha-shop/blob/main/image/002.png)
 
 ### `npm i`
 
