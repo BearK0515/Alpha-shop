@@ -3,6 +3,7 @@ import Step1 from './Step/Step1.js';
 import Step2 from './Step/Step2.js';
 import Step3 from './Step/Step3.js';
 import ProgressControl from './Step/ProgressControl.js';
+import Cart from './Cart/Cart.js';
 
 import "./Style/reset.scss"
 import "./Style/Main.scss"
@@ -28,6 +29,8 @@ export default function Main() {
               <Step3 />
             </section>
           </section>
+          {/* cart */}
+          <Cart />
           {/* progress-control */}
           <ProgressControl />
         </div>

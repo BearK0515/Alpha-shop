@@ -3,10 +3,9 @@ body {
     sans-serif;
 }
 .main-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 60px auto;
-  width: 80%;
 }
 
 .form-container {
@@ -14,7 +13,7 @@ body {
 }
 
 .register-container {
-  width: 50%;
+  width: 90%;
 }
 
 .d-none {
