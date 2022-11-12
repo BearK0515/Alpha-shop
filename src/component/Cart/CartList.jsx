@@ -15,7 +15,7 @@ export default function CartList({products, setProducts}) {
       }
     })
     ProductData = ProductData.filter(p =>
-      p.quantity >0
+      p.quantity > 0
     );
     setProducts(ProductData)
   }
