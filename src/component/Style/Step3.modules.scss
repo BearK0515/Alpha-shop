@@ -1,24 +1,23 @@
-.credit-card {
-  .input-container{
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    .visaName,
-    .visaNumber {
-      width: 64%;
-      .input-label,
-      input {
-        width: 100%;
-      }
+.input-container{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  .visaName,
+  .visaNumber {
+    width: 64%;
+    .input-label,
+    input {
+      width: 100%;
     }
-    .visaDate,
-    .visaCode {
-      width: 48%;
-      .input-label,
-      input {
-        width: 100%;
-      }
+  }
+  .visaDate,
+  .visaCode {
+    width: 48%;
+    .input-label,
+    input {
+      width: 100%;
     }
   }
 }
+
 

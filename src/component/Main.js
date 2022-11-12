@@ -1,14 +1,15 @@
-import StepProgress from "./Step/StepProgress.js"
-import Step1 from './Step/Step1.js';
-import Step2 from './Step/Step2.js';
-import Step3 from './Step/Step3.js';
-import ProgressControl from './Step/ProgressControl.js';
-import Cart from './Cart/Cart.js';
+import StepProgress from "./Step/StepProgress.jsx"
+import Step1 from './Step/Step1.jsx';
+import Step2 from './Step/Step2.jsx';
+import Step3 from './Step/Step3.jsx';
+import ProgressControl from './Step/ProgressControl.jsx';
+import Cart from './Cart/Cart.jsx';
 
 import "./Style/reset.scss"
 import "./Style/Main.scss"
 
-export default function Main() {
+export default function Main(props) {
+
   return (
     <>
       {/* main */}
@@ -21,21 +22,20 @@ export default function Main() {
             data-total-price={0}
           >
             {/* register-progress */}
-            <StepProgress />
+            <StepProgress step={props.step}/>
             {/* register-form */}
             <section class="form-container col col-12">
-              <Step1 />
-              <Step2 />
-              <Step3 />
+              {props.step === 1 && <Step1/>}
+              {props.step === 2 && <Step2/>}
+              {props.step === 3 && <Step3/>}
             </section>
           </section>
           {/* cart */}
           <Cart />
           {/* progress-control */}
-          <ProgressControl />
+          <ProgressControl step={props.step} onClick={props.onClick}/>
         </div>
       </main>
     </>
-    
   )
 }

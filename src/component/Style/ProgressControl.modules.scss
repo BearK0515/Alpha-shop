@@ -1,5 +1,5 @@
-.progress-control-container {
-  width: 90%;
+.progress-container {
+  width: 95%;
 }
 
 .button-group {
@@ -37,7 +37,7 @@
   position: absolute;
   left: 0;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 

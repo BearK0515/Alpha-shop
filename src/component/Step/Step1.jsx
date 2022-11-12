@@ -3,7 +3,7 @@ import "../Style/Step1.modules.scss"
 export default function Step1 () {
   return (
     <>
-      <form className="address col col-12" data-phase="address">
+      <form className="part address col col-12" data-phase="address">
         <h3 className="form-title">寄送地址</h3>
         <section className="form-body col col-12">
           <div className="input-container col col-12">

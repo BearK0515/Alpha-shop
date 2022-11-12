@@ -1,10 +1,10 @@
-export const cartItems = [
+export const cartData = [
   {
     id: '1',
     name: '貓咪罐罐',
     img: 'https://picsum.photos/300/300?text=1',
     price: 100,
-    quantity: 2,
+    quantity: 1,
   },
   {
     id: '2',
@@ -14,3 +14,4 @@ export const cartItems = [
     quantity: 1,
   },
 ]
+
