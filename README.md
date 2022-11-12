@@ -1,10 +1,10 @@
 # 用React練習 Alpha Shop切版
 
-用React的component練習把Alpha Shop切成5五部分。
+用React的component練習Alpha Shop切版。 添加步驟按鈕、數量加減按鈕功能。 進度條樣式。
 
 ## 專案畫面
 
-![002](https://github.com/BearK0515/Alpha-shop/blob/main/image/002.png)
+![003](https://github.com/BearK0515/Alpha-shop/blob/main/image/003.png)
 
 ### `npm i`
 
