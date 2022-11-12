@@ -2,7 +2,7 @@ import "../Style/Cart.modules.scss"
 import CartList from "./CartList"
 import {cartData} from "./CartData"
 import { useState } from "react"
-import {useImmer} from 'use-immer'
+
 //方法一
 // const listItems = cartItems.map(item =>
 //   <div class="product-container col col-12" key={item.id} data-count="0" data-price="3999">
@@ -49,8 +49,6 @@ import {useImmer} from 'use-immer'
 //     </>
 //   )
 // }
-
-
 
 export default function Cart () {
 
