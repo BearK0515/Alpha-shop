@@ -1,6 +1,9 @@
 # 用React練習 Alpha Shop切版
 
-用React的component練習Alpha Shop切版。 添加步驟按鈕、數量加減按鈕功能。 進度條樣式。
+用React的component練習Alpha Shop切版。
+增加步驟按鈕、數量加減按鈕功能。 進度條樣式。
+使用context做全站管理
+增加送出表單時，console.log信用卡資料
 
 ## 專案畫面
 
