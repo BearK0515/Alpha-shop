@@ -6,7 +6,7 @@ export default function Step2 () {
       <h3 className="form-title">運送方式</h3>
       <section className="form-body Shipping col col-12">
         <label className="radio-group col col-12" data-price="0">
-          <input id="shipping-standard" type="radio" name="shipping"  checked/>
+          <input id="shipping-standard" type="radio" name="shipping"/>
           <div className="radio-info">
             <div className="shipping-container col col-12">
               <div className="text">標準運送</div>

@@ -7,8 +7,13 @@ import Cart from './Cart/Cart.jsx';
 
 import "./Style/reset.scss"
 import "./Style/Main.scss"
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext.jsx";
 
-export default function Main(props) {
+
+export default function Main() {
+  
+  const {currentStep, setCurrentStep}=useContext(CartContext)
 
   return (
     <>
@@ -22,18 +27,18 @@ export default function Main(props) {
             data-total-price={0}
           >
             {/* register-progress */}
-            <StepProgress step={props.step}/>
+            <StepProgress currentStep={currentStep}/>
             {/* register-form */}
             <section class="form-container col col-12">
-              {props.step === 1 && <Step1/>}
-              {props.step === 2 && <Step2/>}
-              {props.step === 3 && <Step3/>}
+              {currentStep === 1 && <Step1/>}
+              {currentStep === 2 && <Step2/>}
+              {currentStep === 3 && <Step3/>}
             </section>
           </section>
           {/* cart */}
           <Cart />
           {/* progress-control */}
-          <ProgressControl step={props.step} onClick={props.onClick}/>
+          <ProgressControl currentStep={currentStep} setCurrentStep={setCurrentStep}/>
         </div>
       </main>
     </>

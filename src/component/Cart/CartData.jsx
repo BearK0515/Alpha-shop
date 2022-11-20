@@ -4,7 +4,7 @@ export const cartData = [
     name: '貓咪罐罐',
     img: 'https://picsum.photos/300/300?text=1',
     price: 100,
-    quantity: 1,
+    quantity: 2,
   },
   {
     id: '2',
