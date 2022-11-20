@@ -52,12 +52,9 @@ import CartList from "./CartList"
 // }
 
 export default function Cart () {
-  const {cartItems}=useContext(CartContext)
-  let totalPrice = 0
-  for (let i =0 ; i<cartItems.length ;i++){
-    totalPrice += cartItems[i].price * cartItems[i].quantity
-  }
 
+  const {total}=useContext(CartContext)
+  
   return (
     <section className="cart-container col col-lg-5 col-sm-12">
       <h3 className="cart-title">購物籃</h3>
@@ -70,7 +67,7 @@ export default function Cart () {
       </section>
       <section className="cart-info total col col-12">
         <div className="text">小計</div>
-        <div className="price">${totalPrice}</div>
+        <div className="price">${total()}</div>
       </section>
     </section>
   )

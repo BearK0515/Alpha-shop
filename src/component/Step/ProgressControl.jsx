@@ -3,10 +3,12 @@ import rightArrow from "../icons/right-arrow.svg"
 import leftArrow from "../icons/left-arrow.svg"
 import { useContext } from "react"
 import { CreditCardContext, inputValue } from "../../Context/CreditCardContext"
+import { CartContext } from "../../Context/CartContext"
 
 
 export default function ProgressControl ({currentStep,setCurrentStep}) {
   const {value, setValue} = useContext(CreditCardContext)
+  const {total} = useContext(CartContext)
 
   const nextBtn = () => {
     if (currentStep < 3) {
@@ -20,9 +22,9 @@ export default function ProgressControl ({currentStep,setCurrentStep}) {
 
   const handleSubmit = () => {
     console.log(value);
-    alert("已確認下單！！")
+    console.log(`總金額:${total()}`);
+    // alert("已確認下單！！");
     setValue(inputValue)
-
   }
 
   return (

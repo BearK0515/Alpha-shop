@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { CartContext } from "../Context/CartContext.jsx";
 
 
+
 export default function Main() {
   
   const {currentStep, setCurrentStep}=useContext(CartContext)
@@ -36,7 +37,7 @@ export default function Main() {
             </section>
           </section>
           {/* cart */}
-          <Cart />
+            <Cart />
           {/* progress-control */}
           <ProgressControl currentStep={currentStep} setCurrentStep={setCurrentStep}/>
         </div>

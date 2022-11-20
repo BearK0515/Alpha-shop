@@ -4,7 +4,7 @@ export const inputValue = {
   name: "",
   number: "",
   term: "",
-  cvc: "",
+  cvc: ""
 }
 
 export const CreditCardContext = createContext("")
